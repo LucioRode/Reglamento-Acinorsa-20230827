@@ -1,16 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 
 html {
     height: 100%;
 }
 
 body {
-    background-color: #eeeeee;
+    background: #159957;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #155799, #159957);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mtbanner {
+    margin-top: 10px;
 }
 
 nav ul li {
-    margin: 10px 1px 1px 10px;
     list-style: none;
+}
+
+nav ul li a {
+    /*margin: 10px 1px 1px 10px;*/
+    padding: 10px 40px 5px 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #696969;
+    background: rgba(255, 255, 255, 0.5);
+    border-style: none none solid none;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.5);*/
+}
+
+nav ul li a:visited {
+    text-decoration: none;
 }
 
 .max20px {
@@ -19,8 +50,12 @@ nav ul li {
 
 .z-5px {
     position: relative;
-    top: -5px;
+    top: -10px;
     z-index: -5;
+}
+
+.h50px {
+    min-height: 50px;
 }
 
 .maxw100 {
@@ -60,8 +95,9 @@ nav ul li {
     max-height: 70px;
 }
 
-.logoInti {
-    max-height: 60px;
+.logoArgProg {
+    margin: 10px;
+    max-height: 50px;
 }
 
 .redesListon {
@@ -72,11 +108,6 @@ nav ul li {
 
 .sombra {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.pBtn {
-    padding: 0px 10px 0px;
-    cursor: pointer;
 }
 
 .aliIzq {
@@ -131,8 +162,12 @@ nav ul li {
     left: 40px;
 }
 
+.imgMax50 {
+    max-width: 80px;
+}
+
 .nombre {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .texto {
@@ -164,10 +199,10 @@ nav ul li {
 }
 
 .d_head {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
 }
 
@@ -176,7 +211,30 @@ nav ul li {
     max-height: 100px;
 }
 
+.marginB20 {
+    margin-bottom: 20px;
+}
+
+.pc {
+    visibility: visible;
+}
+
+.cel {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 720px) {
+
+    nav ul li a {
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        margin-top: 40px;
+    }
+
     .listonAzul {
         background-color: #00358e;
         max-height: 110px;
@@ -185,7 +243,7 @@ nav ul li {
     .aliIzq {
         text-align: center;
     }
-    
+
     .aliDer {
         text-align: center;
     }
@@ -197,10 +255,10 @@ nav ul li {
         margin-left: 10px;
     }
 
-    .logoInti {
-        max-height: 50px;
+    .logoArgProg {
+        max-height: 40px;
     }
-    
+
     .fotoPerfil {
         position: relative;
         width: auto;
@@ -212,6 +270,22 @@ nav ul li {
 
     .altura {
         height: 90px;
+    }
+
+    .pc {
+        visibility: hidden;
+    }
+
+    .cel {
+        min-width: 100%;
+        min-height: 100vh;
+        visibility: visible;
+        display: relative;
+        float: left;
+        left: 0px;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 999;
     }
 }
 

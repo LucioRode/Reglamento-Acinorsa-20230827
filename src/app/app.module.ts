@@ -10,6 +10,12 @@ import { FooterComponent } from './Componentes/footer/footer.component';
 import { InicioComponent } from './Componentes/inicio/inicio.component';
 import { AcercadeComponent } from './Componentes/acercade/acercade.component';
 import { EncabezadoComponent } from './Componentes/encabezado/encabezado.component';
+import { ExperienciaComponent } from './Componentes/experiencia/experiencia.component';
+import { EducacionComponent } from './Componentes/educacion/educacion.component';
+import { SkillsComponent } from './Componentes/skills/skills.component';
+import { ProyectosComponent } from './Componentes/proyectos/proyectos.component';
+import { BotonesCelComponent } from './Componentes/botones-cel/botones-cel.component';
+import { ContactoComponent } from './Componentes/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +27,12 @@ import { EncabezadoComponent } from './Componentes/encabezado/encabezado.compone
     InicioComponent,
     AcercadeComponent,
     EncabezadoComponent,
+    ExperienciaComponent,
+    EducacionComponent,
+    SkillsComponent,
+    ProyectosComponent,
+    BotonesCelComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,

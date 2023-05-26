@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcercadeComponent implements OnInit {
 
+  descrip = "Aca se describe al personaje del perfil"
   constructor() { }
 
   ngOnInit(): void {

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListonsuperiorComponent implements OnInit {
 
   txtBtnLogin: string = "LOGIN";
+  nombreCabecera: string = "Delgado Lucio Rodrigo";
 
   constructor() { }
 

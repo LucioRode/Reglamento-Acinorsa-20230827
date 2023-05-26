@@ -11,6 +11,7 @@ export class EncabezadoComponent implements OnInit {
   ocupacion = "Desarrollador Full Stack jr";
   provincia = "Santa Fe ";
   pais = "Argentina";
+  imgEstudio = "https://static.prodasoftware.com/SuccessCase/c/e/s/39f4a89a4c822f40!cessi.jpg"
 
   constructor() { }
 
