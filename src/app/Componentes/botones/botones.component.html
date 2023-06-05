@@ -1,16 +1,40 @@
 <div class="container">
+
     <!--   Botones para pc   -->
-    <div class="max20px">
+    <div class="max20px pc animationFX">
         <nav class="text-center">
             <ul class="navbar navbar-bar mx-auto d-flex">
-                <li><a href="" class="fontButtons">Inicio</a></li>
-                <li><a href="" class="fontButtons">Acerca de</a></li>
-                <li><a href="" class="fontButtons">Experiencia</a></li>
-                <li><a href="" class="fontButtons">Educación</a></li>
-                <li><a href="" class="fontButtons">Skills</a></li>
-                <li><a href="" class="fontButtons">Proyectos</a></li>
-                <li><a href="" class="fontButtons">Contacto</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="inicio()">Inicio</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="acercade()">Acerca de</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="experiencia()">Experiencia</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="educacion()">Educación</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="skills()">Skills</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="proyectos()">Proyectos</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="contacto()">Contacto</a></li>
             </ul>
         </nav>
     </div>
+
+    <!--   Botones para cel   -->
+
+    <div class="cel animationMenu" *ngIf="iconMenu">
+        <a href="javascript:void(0)" (click)="menuCel()">
+            <img class="iMenu" src="./assets/img/iconMenu.png" alt="Icon Menu" >
+        </a>
+    </div>
+    <div class="cel semiFondo animationMenu" *ngIf="statusMenuCel">
+        <a href="javascript:void(0)" class="btn-close-white closeBtn" (click)="menuCel()"><b>&times;</b></a>
+        <nav class="text-center">
+            <ul class="navbar navbar-bar d-block">
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="inicio()">Inicio</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="acercade()">Acerca de</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="experiencia()">Experiencia</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="educacion()">Educación</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="skills()">Skills</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="proyectos()">Proyectos</a></li>
+                <li><a href="javascript:void(0)" class="fontButtons" (click)="contacto()">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    
 </div>

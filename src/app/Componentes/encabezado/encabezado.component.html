@@ -1,14 +1,14 @@
-<div class="borderRadius bg-white bl-grey sombra marginB20">
+<div class="borderRadius bg-white bl-grey sombra marginB20 mtbanner animationFX">
     <div class="row">
         <div class="col-12">
-            <img class="maxw100 imgAjustar" src="../assets/img/banner.png" alt="banner">
+            <img class="maxw100 imgAjustar" src="{{ banner }}" alt="imagen de banner">
         </div>
     </div>
 
     <div class="row">
         <div class="d-flex altura">
             <div class="col-12">
-                <img class="fotoPerfil rounded-circle posicionFotoPerfil sombra" src="../assets/img/fotoPerfil.png" alt="Foto de Perfil">
+                <img class="fotoPerfil rounded-circle posicionFotoPerfil sombra" src="{{ photoprofile }}" alt="Foto de Perfil">
             </div>
         </div>
         
@@ -18,7 +18,7 @@
         <div class="col-10 col-lg-10 m-0 d_head">
             <p class="nombre texto"><b>  {{ nombreCompleto }}  </b></p>
             <p class="m-0">  {{ ocupacion }}  </p>
-            <p class="m-0">  {{ provincia }} ({{pais}}) <a href="#">Informacion de contacto.</a></p>
+            <p class="m-0">  {{ provincia }} ({{ pais }}) <a href="javascript:void(0)" class="" (click)="contacto()">Informacion de contacto.</a></p>
         </div>
         <div class="col-2 col-lg-2">
             <img class="imgMax50" src="{{ imgEstudio }}"  alt="Icon Escudo Estudios">

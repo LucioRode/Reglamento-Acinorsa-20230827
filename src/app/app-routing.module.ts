@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+//Componentes
 import { InicioComponent } from './Componentes/inicio/inicio.component';
 import { DlrComponent } from './Componentes/dlr/dlr.component';
 import { AcercadeComponent } from './Componentes/acercade/acercade.component';
@@ -8,9 +10,11 @@ import { EducacionComponent } from './Componentes/educacion/educacion.component'
 import { SkillsComponent } from './Componentes/skills/skills.component';
 import { ProyectosComponent } from './Componentes/proyectos/proyectos.component';
 import { ContactoComponent } from './Componentes/contacto/contacto.component';
+import { LoginComponent } from './Componentes/login/login.component';
 
 const routes: Routes = [
   {  path: '', component: InicioComponent},
+  {  path: 'login', component: LoginComponent},
   {  path: 'acercade', component: AcercadeComponent},
   {  path: 'experiencia', component: ExperienciaComponent},
   {  path: 'educacion', component: EducacionComponent},

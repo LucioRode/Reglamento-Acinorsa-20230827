@@ -8,12 +8,12 @@
 
         <div class="col-12 col-md-6">
             <p class="aliDer">
-                <img class="redesListon" src="../assets/img/gh.png" alt=" Icon GitHub">
-                <img class="redesListon" src="../assets/img/li.png" alt=" Icon LinkedIn">
-                <img class="redesListon" src="../assets/img/ig.png" alt=" Icon Instagram">
-                <img class="redesListon" src="../assets/img/fb.png" alt=" Icon Facebook">
-                <img class="redesListon" src="../assets/img/tw.png" alt=" Icon Twitter">
-                <button class="btn btn-secundary redesListon fontButtons radioCirc">{{  txtBtnLogin  }}</button>
+                <a href="{{ gh }}" *ngIf="sGh"><img class="redesListon" src="../assets/img/gh.png" alt=" Icon GitHub"></a>
+                <a href="{{ li }}" *ngIf="sLi"><img class="redesListon" src="../assets/img/li.png" alt=" Icon LinkedIn"></a>
+                <a href="{{ ins }}" *ngIf="sIns"><img class="redesListon" src="../assets/img/ig.png" alt=" Icon Instagram"></a>
+                <a href="{{ fb }}" *ngIf="sFb"><img class="redesListon" src="../assets/img/fb.png" alt=" Icon Facebook"></a>
+                <a href="{{ tw }}" *ngIf="sTw"><img class="redesListon" src="../assets/img/tw.png" alt=" Icon Twitter"></a>
+                <a href="javascript:void(0)" (click)="logeo()"><button class="btn btn-secundary redesListon fontButtons radioCirc"  *ngIf="sLog">{{  txtBtnLogin  }}</button></a>
             </p>
         </div>
     </div>
