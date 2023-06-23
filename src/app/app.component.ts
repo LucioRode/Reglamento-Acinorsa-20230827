@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Argentina Programa - Delgado Lucio Rodrigo - Desarrollador Full Stack jr.';
+  title = 'Delgado Lucio Rodrigo - Desarrollador Full Stack jr. - Argentina Programa';
   statusMenuCel : boolean = true;
 }
 

@@ -1,27 +1,70 @@
-<div class="borderRadius bg-white bl-grey sombra marginB20 mtbanner animationFX">
-    <div class="row">
-        <div class="col-12">
-            <img class="maxw100 imgAjustar" src="{{ banner }}" alt="imagen de banner">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="d-flex altura">
+<div class="container">
+    <div class="borderRadius bg-white bl-grey sombra marginB20 mtbanner animationFX" *ngIf="edit">
+        <div class="row">
             <div class="col-12">
-                <img class="fotoPerfil rounded-circle posicionFotoPerfil sombra" src="{{ photoprofile }}" alt="Foto de Perfil">
+                <img class="maxw100 imgAjustar" src="{{ banner }}" alt="imagen de banner">
             </div>
         </div>
-        
+
+        <div class="row">
+            <div class="d-flex altura">
+                <div class="col-12">
+                    <img class="fotoPerfil rounded-circle posicionFotoPerfil sombra" src="{{ photoprofile }}"
+                        alt="Foto de Perfil">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row d_head">
+            <div class="col-12 col-lg-12">
+                <p class="titulo"><b> {{ nombreCompleto }} </b></p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <p class="m-0"> {{ ocupacion }} </p>
+                <p class="m-0"> {{ ciudad }} - {{ provincia }} ({{ pais }}).</p>
+                <p>
+                    <a href="javascript:void(0)" (click)="verContacto()">{{ txtContacto }}</a>
+                </p>
+            </div>
+
+            <div class="col-12 col-lg-6" *ngIf="sContacto">
+
+                <!--   Whatsapp   -->
+                <a
+                    href="https://api.whatsapp.com/send?phone=+{{phonenumber}}&text=Buenas,%20vengo%20desde%20la%20app%20de%20Mantenimiento%20Industrial">
+                    <div class="row">
+
+                        <div class="col-1 col-lg-1">
+                            <img class="contactoRedes" src="./assets/img/telefono.png" alt="Icon telefono">
+                        </div>
+
+                        <div class="col-8 col-lg-8 d-flex">
+                            <p class="text align-middle text-monospace textBlack">+{{ phonenumber }}</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--   Gmail   -->
+                <a href="mailto:{{email}}">
+                    <div class="row">
+
+                        <div class="col-1 col-lg-1">
+                            <img class="contactoRedes" src="./assets/img/email.png" alt="Icon Email">
+                        </div>
+
+                        <div class="col-8 col-lg-8 d-flex">
+                            <p class="text align-middle text-monospace textBlack">{{ email }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
     </div>
 
-    <div class="row m-0">
-        <div class="col-10 col-lg-10 m-0 d_head">
-            <p class="nombre texto"><b>  {{ nombreCompleto }}  </b></p>
-            <p class="m-0">  {{ ocupacion }}  </p>
-            <p class="m-0">  {{ provincia }} ({{ pais }}) <a href="javascript:void(0)" class="" (click)="contacto()">Informacion de contacto.</a></p>
-        </div>
-        <div class="col-2 col-lg-2">
-            <img class="imgMax50" src="{{ imgEstudio }}"  alt="Icon Escudo Estudios">
-        </div>
+    <div *ngIf="editOn">
+        <p class="titulo">Hola Milenita</p>
     </div>
 </div>

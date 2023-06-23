@@ -8,13 +8,12 @@ import { Router } from '@angular/router';
 })
 export class ListonsuperiorComponent implements OnInit {
 
-  txtBtnLogin: string = "LOGIN";
   sGh: boolean = false;
   sLi: boolean = false;
   sIns: boolean = false;
   sFb: boolean = false;
   sTw: boolean = false;
-  sLog: boolean = true;
+  ap: string = "https://www.argentina.gob.ar/economia/conocimiento/argentina-programa";
   gh: string = "https://github.com/LucioRode";
   li: string = "https://www.linkedin.com/in/delgadoluciorodrigo/";
   ins: string = "https://www.instagram.com/DelgadoLucioRodrigo/";

@@ -11,6 +11,8 @@ export class BotonesComponent implements OnInit {
 
   statusMenuCel : boolean = false;
   iconMenu : boolean = true;
+  txtBtnLogin: string = "Ingresar";
+  sLog: boolean = true;
 
   constructor(private router : Router) {
   }
@@ -53,6 +55,11 @@ export class BotonesComponent implements OnInit {
     this.menuCel();
   }
 
+  logeo(): void {
+    this.router.navigate(['/login']);
+    this.menuCel();
+  }
+
   menuCel(): void {
     if(this.statusMenuCel !== false){
     this.statusMenuCel = false;
@@ -62,4 +69,8 @@ export class BotonesComponent implements OnInit {
     this.iconMenu = false;
   }
   }
+
+  
+
+  
 }

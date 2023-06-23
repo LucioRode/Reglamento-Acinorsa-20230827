@@ -12,17 +12,33 @@ export class EncabezadoComponent implements OnInit {
   photoprofile = "http://delgadoluciorodrigo.acinorsa.com.ar/assets/img/defect/profiledefect.png";
   nombreCompleto = "Delgado Lucio Rodrigo"; 
   ocupacion = "Desarrollador Full Stack jr";
+  ciudad = "Reconquista";
   provincia = "Santa Fe ";
   pais = "Argentina";
-  imgEstudio = "https://static.prodasoftware.com/SuccessCase/c/e/s/39f4a89a4c822f40!cessi.jpg"
+  edit = true;
+  editOn = false;
+  sContacto = false;
+  txtContacto : string = "Información de contacto";
+  email = "delgadoluciorodrigo@gmail.com";
+  phonenumber : number = 5493482622020;
 
   constructor(private router : Router) { }
 
   ngOnInit(): void {
   }
 
-  contacto() : void {
-    this.router.navigate(['/contacto']);
+  verContacto(): void {
+    if(this.sContacto == true){
+      this.sContacto = false;
+      this.txtContacto = "Información de contacto";
+    } else {
+      this.sContacto = true;
+      this.txtContacto = "Ocultar Información";
+    }
   }
+  
+  
+  
+
 
 }

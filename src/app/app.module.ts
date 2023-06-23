@@ -16,6 +16,8 @@ import { SkillsComponent } from './Componentes/skills/skills.component';
 import { ProyectosComponent } from './Componentes/proyectos/proyectos.component';
 import { ContactoComponent } from './Componentes/contacto/contacto.component';
 import { LoginComponent } from './Componentes/login/login.component';
+import { UsuarioNuevoComponent } from './Componentes/login/usuario-nuevo/usuario-nuevo.component';
+import { InicioSessionComponent } from './Componentes/login/inicio-session/inicio-session.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { LoginComponent } from './Componentes/login/login.component';
     ProyectosComponent,
     ContactoComponent,
     LoginComponent,
+    UsuarioNuevoComponent,
+    InicioSessionComponent,
   ],
   imports: [
     BrowserModule,
