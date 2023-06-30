@@ -3,6 +3,65 @@
         <div class="row d_head">
             <div class="col-12 col-lg-12 m-0">
                 <p class="titulo"><b>Contacto</b></p>
+                <hr>
+                <div class="row margin30 alturaMinima">
+
+                    <!--   Información de Contacto  -->
+                    <div class="col-12 col-lg-6 fondoBlancoPerla centrar">
+                        <div class="">
+
+                            <!--   Email   -->
+                            <a href="mailto:{{email}}">
+                                <div class="row">
+
+                                    <div class="col-1 col-lg-1 cardRedes m40px m-3">
+                                        <img class="imgRedes alignVert" src="./assets/img/gm.png" alt="Icon Gmail">
+                                    </div>
+
+                                    <div class="col-8 col-lg-8 d-flex m-3">
+                                        <span class="textBlack align-middle"><b>{{email}}</b></span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!--   Whatsapp   -->
+                            <a href="https://api.whatsapp.com/send?phone=+{{phoneNumber}}&text=Buenas,%20vengo%20desde%20la%20app%20de%20Mantenimiento%20Industrial">
+                                <div class="row">
+
+                                    <div class="col-1 col-lg-1 cardRedes m40px m-3">
+                                        <img class="imgRedes" src="./assets/img/wsp.png" alt="Icon Whatsapp">
+                                    </div>
+
+                                    <div class="col-8 col-lg-8 d-flex m-3">
+                                        <span class="textBlack align-middle"><b>+{{phoneNumber}}</b></span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!--   LinkedIn   -->
+                            <a href="{{linkedIn}}">
+                                <div class="row">
+
+                                    <div class="col-1 col-lg-1 cardRedes m40px m-3">
+                                        <img class="imgRedes" src="./assets/img/lki.png" alt="Icon LinkedIn">
+                                    </div>
+
+                                    <div class="col-8 col-lg-8 d-flex m-3">
+                                        <span class="textBlack align-middle"><b>@{{userLinkedIn}}</b></span>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <!--   Formulario de Contacto  -->
+                    <div class="col-12 col-lg-6 fondoBlancoPerla centrar">
+
+                        <!--   Formulario   -->
+                        <app-form-contacto></app-form-contacto>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

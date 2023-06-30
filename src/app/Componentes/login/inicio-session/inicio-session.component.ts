@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioSessionComponent implements OnInit {
 
+  errorInicio : boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  login(): void {
   }
 
 }

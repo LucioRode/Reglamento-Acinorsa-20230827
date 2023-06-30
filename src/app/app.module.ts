@@ -18,6 +18,8 @@ import { ContactoComponent } from './Componentes/contacto/contacto.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { UsuarioNuevoComponent } from './Componentes/login/usuario-nuevo/usuario-nuevo.component';
 import { InicioSessionComponent } from './Componentes/login/inicio-session/inicio-session.component';
+import { FormContactoComponent } from './Componentes/contacto/form-contacto/form-contacto.component';
+import { PropaComponent } from './Componentes/login/propa/propa.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { InicioSessionComponent } from './Componentes/login/inicio-session/inici
     LoginComponent,
     UsuarioNuevoComponent,
     InicioSessionComponent,
+    FormContactoComponent,
+    PropaComponent,
   ],
   imports: [
     BrowserModule,

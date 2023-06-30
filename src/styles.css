@@ -17,6 +17,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.margin30 {
+    margin: 30px;
+}
+
 .mtbanner {
     margin-top: 15px;
 }
@@ -37,6 +41,17 @@ a {
 .textBlack {
     color: black;
 }
+
+.alturaMinima {
+    min-height: 400px;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /***   Fin Generales   ***/
 
@@ -99,6 +114,8 @@ nav a:visited {
 }
 
 /***---   Fin Encabezado   ---***/
+
+
 .max20px {
     max-height: 20px;
 }
@@ -188,6 +205,26 @@ nav a:visited {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.fondoBlancoPerla {
+    background-color: #f3f3f3;
+}
+
+.fondoBlanco {
+    background-color: white;
+}
+
+.form {
+    width: 320px;
+    height: 350px;
+    border: solid 1px grey;
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+#mensaje {
+    height: 80px;
+}
+
 .dlr {
     max-height: 20px;
     margin-left: 10px;
@@ -255,7 +292,6 @@ nav a:visited {
     padding-right: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-
 }
 
 .marginB20 {
@@ -263,11 +299,40 @@ nav a:visited {
     margin-bottom: 5px;
 }
 
+
+.w100 {
+    width: 100%;
+}
+
 /***  LOGIN  ***/
 .cuadroLogin {
     width: 300px;
-    min-height: 400px;
+    height: 250px;
+    border: solid 1px grey;
+    background-color: #e6e6e6;
+    padding: 20px;
 }
+
+.cuadroPropaRegistro {
+    width: 400px;
+}
+
+.mBottom {
+    margin-bottom: 15px;
+}
+
+.mTop {
+    margin-top: 30px;
+}
+
+.m15 {
+    margin-top: 10px;
+}
+
+.btnRegistro {
+    background-color: rgb(0, 255, 0);
+}
+
 
 
 /*--------------------------------------------------------------------------------*/
@@ -280,7 +345,7 @@ nav a:visited {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
 
     nav a {
         padding: 10px 20px 10px 20px;
@@ -297,13 +362,10 @@ nav a:visited {
         max-height: 110px;
     }
 
-    .aliIzq {
+    .aliIzq, .aliDer{
         text-align: center;
     }
 
-    .aliDer {
-        text-align: center;
-    }
 
     .redesListon {
         max-height: 30px;
@@ -359,7 +421,6 @@ nav a:visited {
         float: left;
         left: 0px;
         top: 0px;
-        z-index: 999;
     }
 }
 

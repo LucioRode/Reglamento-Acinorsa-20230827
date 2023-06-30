@@ -1,0 +1,48 @@
+<form class="form" (submit)="send()"> <!-- [formGroup]="form" -->
+
+    <!--   Nombre   -->
+    <div class="row mBottom">
+        <div class="col-12">
+            <input class="w100" id="name" type="text" formControlName="name"
+                placeholder="Nombres" required>
+        </div>
+    </div>
+
+    <!--   Apellido   -->
+    <div class="row mBottom">
+        <div class="col-12">
+            <input class="w100" id="lastName" type="text" formControlName="lastName"
+                placeholder="Apellido">
+        </div>
+    </div>
+
+    <!--   Telefono   -->
+    <div class="row mBottom">
+        <div class="col-12">
+            <input class="w100" id="phone" type="number" formControlName="phone"
+                placeholder="Telefono" required>
+        </div>
+    </div>
+
+    <!--   Correo   -->
+    <div class="row mBottom">
+        <div class="col-12">
+            <input class="w100" id="email" type="text" formControlName="email"
+                placeholder="Email" required>
+        </div>
+    </div>
+
+    <!--   Mensaje   -->
+    <div class="row mBottom">
+        <div class="col-12">
+            <input class="w100" id="mensaje" type="text" formControlName="mensaje"
+                placeholder="Mensaje" required>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary"><b>Enviar</b></button>
+    </div>
+
+
+</form>
