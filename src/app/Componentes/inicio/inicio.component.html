@@ -1,7 +1,137 @@
-<app-encabezado></app-encabezado>
-<app-acercade></app-acercade>
-<app-experiencia></app-experiencia>
-<app-educacion></app-educacion>
-<app-skills></app-skills>
-<app-proyectos></app-proyectos>
-<app-contacto></app-contacto>
+<div class="container">
+    <div class="centrar mTop">
+        <h1><b>Gran Premio 27 de Agosto de 2023</b></h1>
+
+    </div>
+
+    <p class="mTop">Lugar: Velódromo Municipal Aroldo "Pitogüé" Díaz - Reconquista (Santa Fe)</p>
+    <p>Organiza y fiscaliza: ACINORSA</p>
+
+    <button class="accordion" (click)="btncontacto()">Teléfonos por cualquier consulta</button>
+    <div class="panel" *ngIf="sContacto">
+        <ul>
+            <li><a class="textBlack" href="https://api.whatsapp.com/send?phone=5493482583825">3482-583825 Gustavo
+                    Benítez.</a></li>
+            <li><a class="textBlack" href="https://api.whatsapp.com/send?phone=5493482254694">3482-254694 Carlos
+                    Simón.</a></li>
+            <li><a class="textBlack" href="https://api.whatsapp.com/send?phone=5493482534409">3482-534409 Marcelo
+                    Mendoza.</a></li>
+        </ul>
+    </div>
+
+    <!--   Acá va el reglamento------------------------------------------------------------------------->
+    <div class="mTop">
+        <h3>Reglamento.</h3>
+        <ol>
+            <li>Horario estricto 9.30hs.</li>
+            <li>Importante presentar licencia 2023.</li>
+            <li>Uso obligatorio de casco.</li>
+            <li>Bicicleta con piñón fijo sin freno.</li>
+            <li>La inscripción sale $ 2.200 por categoría, al devolver el número se re-integrará $200.</li>
+            <li>Muy importante, la queja deberá ser por escrito con la suma de $5.000.</li>
+            <li>
+                <div>
+                    <span>Cronograma de carrea será:</span><br>
+                    <ol>
+                        <li>Master D</li>
+                        <li>Master C y DAMAS</li>
+                        <li>Junior</li>
+                        <li>Master A2 y Master B</li>
+                        <li>Elite, Sub 23 Junior y Master A1.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>SI NO SE COMPLETA EL CUPO DE CORREDORES SE CORRERA EL 100% DE LO RECAUDADO.</li>
+        </ol>
+    </div>
+    <!--   Acá van los premios por categorias ------------------------------------------------------------------------->
+    <h3 class="mTop">PREMIOS POR CATEGORIA</h3>
+
+    <button class="accordion" (click)="masterD()">Master D</button>
+    <div class="panel" *ngIf="sMasterD">
+        <ol>
+            <li>$ 8.000</li>
+            <li>$ 6.000</li>
+            <li>$ 4.000</li>
+            <li>$ 2.000</li>
+        </ol>
+        <ul>
+            <li>5 CORREDOR MINIMO (REPROGRAMARÁ LOS PREMIOS)</li>
+        </ul>
+    </div>
+
+    <button class="accordion" (click)="masterC()">Master C y DAMAS</button>
+    <div class="panel" *ngIf="sMasterC">
+        <ol>
+            <li>$ 10.000</li>
+            <li>$ 8.000</li>
+            <li>$ 6.000</li>
+            <li>$ 4.000</li>
+            <li>$ 2.000</li>
+        </ol>
+        <ul>
+            <li>MASTER C: 10 CORREDORES MINIMO (REPROGRAMARÁ LOS PREMIOS)</li>
+            <li>DAMA: 5 CORREDORAS MINIMO (REPROGRAMARÁ LOS PREMIOS)
+                <br>LA CATEGORIA DAMA TIENE OPCION A MASTER C.
+            </li>
+        </ul>
+    </div>
+
+    <button class="accordion" (click)="junior()">Junior</button>
+    <div class="panel" *ngIf="sJunior">
+        <ol>
+            <li>$ 8.000</li>
+            <li>$ 6.000</li>
+            <li>$ 4.000</li>
+            <li>$ 2.000</li>
+        </ol>
+        <ul>
+            <li>5 CORREDORES MINIMO (REPROGRAMARÁ LOS PREMIOS)</li>
+        </ul>
+    </div>
+
+    <button class="accordion" (click)="masterA2()">Master A2 y B</button>
+    <div class="panel" *ngIf="sMasterA2">
+        <ol>
+            <li>$ 10.000</li>
+            <li>$ 8.000</li>
+            <li>$ 6.000</li>
+            <li>$ 4.000</li>
+            <li>$ 2.000</li>
+        </ol>
+        <ul>
+            <li>10 CORREDORES MINIMO (REPROGRAMARÁ LOS PREMIOS)</li>
+        </ul>
+    </div>
+
+    <button class="accordion" (click)="elite()">Elite, Sub 23, Junior y Master A1</button>
+    <div class="panel" *ngIf="sElite">
+        <ol>
+            <li>$ 20.000</li>
+            <li>$ 15.000</li>
+            <li>$ 10.000</li>
+            <li>$ 8.000</li>
+            <li>$ 6.000</li>
+            <li>$ 4.000</li>
+        </ol>
+        <ul>
+            <li>12 CORREDORES MINIMO (REPROGRAMARÁ LOS PREMIOS)</li>
+            <li>JUNIOR CON OPCION A ELITE.</li>
+        </ul>
+    </div>
+
+    <!--   Acá van los botones de registro y descarga de Reglamento ------------------------------------------------------------------------->
+    <div class="row mTop">
+        <div class="col-6 centrar">
+            <button class="btn btn-info">
+                <a class="textWhite" href="https://acinorsa.com.ar/docs/20230827/Reglamento.pdf" download="Reglamento 27-08-2023" target="_blank">Descargar Reglamento</a>
+            </button>
+        </div>
+        <div class="col-6 centrar">
+            <button class="btn btnRegistro">
+                <a class="textWhite" href="https://forms.gle/q9HXxUXBAsAfgX6KA" target="_blank">Pre-Inscripción</a>
+            </button>
+        </div>
+    </div>
+
+</div>
